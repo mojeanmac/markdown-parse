@@ -86,5 +86,4 @@ public class MarkdownParseTest {
         List<String> expect = List.of();
         assertEquals(MarkdownParse.getLinks(contents), expect);
     }
-    //3, 4, 7, 8 loop forever :(
 }
