@@ -39,5 +39,52 @@ public class MarkdownParseTest {
         List<String> expect = List.of();
         assertEquals(MarkdownParse.getLinks(contents), expect);
     }
-    
+
+    //Prof's tests
+    @Test
+    public void testFile2() throws IOException {
+        String contents= Files.readString(Path.of("C:/Users/mojea/Documents/Winter 2022/CSE 15L/markdown-parse/test-file2.md"));
+        List<String> expect = List.of("https://something.com", "some-page.html");
+        assertEquals(MarkdownParse.getLinks(contents), expect);
+    }
+
+    @Test
+    public void testFile3() throws IOException {
+        String contents = Files.readString(Path.of("C:/Users/mojea/Documents/Winter 2022/CSE 15L/markdown-parse/test-file3.md"));
+        List<String> expect = List.of();
+        assertEquals(MarkdownParse.getLinks(contents), expect);
+    }
+
+    @Test
+    public void testFile4() throws IOException {
+        String contents = Files.readString(Path.of("C:/Users/mojea/Documents/Winter 2022/CSE 15L/markdown-parse/test-file4.md"));
+        List<String> expect = List.of();
+        assertEquals(MarkdownParse.getLinks(contents), expect);
+    }
+
+    @Test
+    public void testFile5() throws IOException {
+        String contents = Files.readString(Path.of("C:/Users/mojea/Documents/Winter 2022/CSE 15L/markdown-parse/test-file5.md"));
+        List<String> expect = List.of();
+        assertEquals(MarkdownParse.getLinks(contents), expect);
+    }
+    @Test
+    public void testFile6() throws IOException {
+        String contents = Files.readString(Path.of("C:/Users/mojea/Documents/Winter 2022/CSE 15L/markdown-parse/test-file4.md"));
+        List<String> expect = List.of();
+        assertEquals(MarkdownParse.getLinks(contents), expect);
+    }
+    @Test
+    public void testFile7() throws IOException {
+        String contents = Files.readString(Path.of("C:/Users/mojea/Documents/Winter 2022/CSE 15L/markdown-parse/test-file4.md"));
+        List<String> expect = List.of();
+        assertEquals(MarkdownParse.getLinks(contents), expect);
+    }
+    @Test
+    public void testFile8() throws IOException {
+        String contents = Files.readString(Path.of("C:/Users/mojea/Documents/Winter 2022/CSE 15L/markdown-parse/test-file4.md"));
+        List<String> expect = List.of();
+        assertEquals(MarkdownParse.getLinks(contents), expect);
+    }
+    //3, 4, 7, 8 loop forever :(
 }
