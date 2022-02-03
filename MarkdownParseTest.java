@@ -14,7 +14,7 @@ public class MarkdownParseTest {
 
     @Test
     public void mytest() throws IOException{
-        String contents= Files.readString(Path.of("C:/Users/mojea/Documents/Winter 2022/CSE 15L/markdown-parse/mytest.md"));
+        String contents= Files.readString(Path.of("mytest.md"));
         List<String> expect = List.of();
         assertEquals(MarkdownParse.getLinks(contents), expect);
     }
